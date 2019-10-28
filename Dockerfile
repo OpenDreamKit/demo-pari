@@ -2,7 +2,7 @@ FROM jupyter/base-notebook:177037d09156
 
 USER root
 
-RUN apt-get update && apt-get -qy build-dep pari && apt-get install libreadline-dev libgmp-dev && apt-clean
+RUN apt-get update && apt-get -qy build-dep pari && apt-get install libreadline-dev libgmp-dev && apt-get clean
 
 USER $NB_USER
 
