@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:a97a294194ab
+FROM jupyter/base-notebook:177037d09156
 
 RUN sudo apt-get build-dep pari
 RUN sudo apt-get install libreadline-dev libgmp-dev
