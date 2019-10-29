@@ -15,4 +15,4 @@ RUN cd pari-2.12.0.alpha
 # RUN make install
 # RUN make install-bin-sta
 
-COPY --chown=$NB_USER:$NB_USER . ${HOME}
+COPY --chown=jovyan:jovyan . ${HOME}
