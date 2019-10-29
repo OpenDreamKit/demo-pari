@@ -12,7 +12,10 @@ RUN wget https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.12.0.alpha.tar
     ./Configure --prefix=GPDIR --mt=pthread && \
     make -j4 gp                             && \
     make doc                                && \
-    make install                            && \
-    make install-bin-sta
+    make install
+#    && \
+#    make install-bin-sta
+
+#RUN pip install pari_jupyter
 
 COPY --chown=1000:100 . ${HOME}
