@@ -10,9 +10,10 @@ RUN wget https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.12.0.alpha.tar
     tar xf pari-2.12.0.alpha.tar.gz         && \
     cd pari-2.12.0.alpha                    && \
     ./Configure --prefix=GPDIR --mt=pthread && \
-    make -j4 gp                             && \
-    make doc                                && \
-    make install
+    make -j4 gp
+#                             && \
+#    make doc                                && \
+#    make install
 #    && \
 #    make install-bin-sta
 
